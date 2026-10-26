@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { margin:0; font-family: 'Plus Jakarta Sans', 'Noto Sans Telugu', sans-serif; -webkit-font-smoothing:antialiased; }
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible { outline:3px solid rgba(217,119,6,.3); outline-offset:2px; }

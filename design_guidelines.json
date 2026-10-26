@@ -1,0 +1,70 @@
+{
+  "app_type": "hybrid_fullstack",
+  "theme": {
+    "archetype": "ORGANIC & EARTHY",
+    "primary": "#D97706",
+    "secondary": "#059669",
+    "background": "#FDFBF7",
+    "surface": "#FFFFFF",
+    "text": "#1F2937",
+    "muted": "#6B7280"
+  },
+  "typography": {
+    "headings": "Plus Jakarta Sans, sans-serif",
+    "body": "Inter, sans-serif",
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl",
+      "h3": "text-xl sm:text-2xl",
+      "body": "text-base"
+    }
+  },
+  "colors": {
+    "primary": "#D97706",
+    "secondary": "#059669",
+    "neutral_light": "#FDFBF7",
+    "neutral_dark": "#1F2937",
+    "accent": "#F59E0B"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border border-amber-900/10 shadow-sm",
+    "card_style": "rounded-2xl border border-amber-900/10 bg-white shadow-sm hover:shadow-md transition-all duration-300",
+    "button_style": "rounded-full font-medium transition-all duration-200 shadow-sm active:scale-95"
+  },
+  "grids": {
+    "bento_strategy": "grid grid-cols-1 md:grid-cols-3 gap-8",
+    "high_density": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+  },
+  "motion": {
+    "hover": "hover:-translate-y-1 transition-transform duration-300",
+    "entrance": "animate-fade-in duration-500"
+  },
+  "accessibility": {
+    "contrast_ratio": "Minimum 4.5:1 for normal text, 3:1 for large text",
+    "focus_states": "focus:ring-2 focus:ring-amber-500 focus:outline-none",
+    "aria_labels": "Mandatory on all interactive icon buttons and modals"
+  },
+  "media": {
+    "image_constraints": "Max-h-[80vh] on mobile, responsive object-cover"
+  },
+  "image_urls": [
+    {
+      "category": "Hero / Storytelling",
+      "description": "Children learning and reading books together",
+      "image_url": "https://images.pexels.com/photos/8922399/pexels-photo-8922399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "category": "Community Education",
+      "description": "Classroom learning in rural India",
+      "image_url": "https://images.pexels.com/photos/15119089/pexels-photo-15119089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  ],
+  "instructions_to_main_agent": "Preserve Google Sheets CSV endpoint https://docs.google.com/spreadsheets/d/1Kg28aA2psqHYLu2UHEX9Q1vlDTR1ME75er4x9nWvrWQ/gviz/tq?tqx=out:csv&sheet=log and n8n production webhook https://ramyachil3.app.n8n.cloud/webhook/28b27c70-bc8b-4388-95ec-af182a1cb854. Display only complete rows with Need_id, Home_Name, Need_Title; ignore incomplete rows including needN001; never show Sponsor_Contact, Home_Contact, or children's faces/names/sensitive info. Implement all required sections: Sticky Navigation, Hero, Storytelling, Dynamic Impact Stats, Current Needs with search/filter/sort, Need Detail modal, Sponsorship Modal with exact payload fields (Need_id, Sponsor_Name, Sponsor_Contact, Message, Need_Title, Home_Name), Track My Sponsorship matching contact against Sheet data, Recently Fulfilled, How It Works, Responsible Giving, Footer, and responsive mobile menu. Ensure all interactive elements have data-testid attributes.",
+  "universal_guidelines_for_main_agent": [
+    "Do not use dark colors as gradients",
+    "Create depth through layered design elements",
+    "Use glass-morphism effects with backdrop filters",
+    "Avoid universal transition like transition: all",
+    "Ensure all interactive elements have testids"
+  ]
+}
